@@ -16,6 +16,26 @@ Facturación
 Principal
 -----------------------------------
 
+Empresa
+""""""""""""""
+
+Dentro de este apartado se introduce la información referente a su empresa, para ser utilizada posteriormente en los listados o documentos.
+Se diferencian tres pestañas: *General*, *Valores por defecto* y *Configuración local*.
+
+.. figure:: images/editar_empresa.png
+   :width: 800 px
+   
+En la pestaña *General* vamos introduciendo los datos de la empresa; cabe destacar el campo *Ejercicio*, es necesario relacionar la empresa con un ejercicio fiscal para que pueda llevarse la contabilidad. Si este ejercicio está creado bastará con pulsar sobre el botón y asignarlo, de lo contrario al pulsar sobre el botón tendrá que crearse el ejercicio de la siguiente forma:
+
+.. figure:: images/editar_ejercicios_fiscales.png
+   :width: 800 px
+   
+Lo más importante a tener en cuenta en la creación del ejercicio fiscal es la fecha de inicio y la fecha de fin (duración del año contable). Después indicamos la serie de los documentos. Esta serie delimita el código numérico por el que comenzarán a contar los informes (tanto de compras como de ventas) de cada año fiscal.
+
+Una vez insertado el ejercicio debemos introducir el logo de la empresa, el cual será utilizado para los albaranes, facturas, etc. En el botón *Abrir fichero de imagen* podemos importar el logo a la aplicación.
+
+Pasamos a la pestaña *Valores por defecto*. En este apartado se asignan todos los valores que se quiere que aparezcan por defecto en Eneboo (*Divisa*, *Forma de pago*, *Almacén*, *Serie de Facturación*).
+
 Clientes
 """"""""""""""
 
@@ -56,6 +76,11 @@ Si marcamos la casilla *De baja*, tenemos que indicar la fecha y este cliente no
 
 Será donde se indiquen sus condiciones comerciales, formas de pago, moneda, serie de facturación, 
 IVA, etc... Con estos datos y los días de pago, Eneboo calcula la fecha de los vencimientos. También podemos insertar el agente que lleva su ficha.
+
+Si hay algún tipo de descuento que se le realice al cliente específicamente y que se aplique a todas las ventas que se le realicen también es en esta pestaña donde se configura.
+
+.. figure:: images/editar_clientes_comercial.png
+   :width: 800 px
 
 **Direcciones**
 
@@ -98,8 +123,134 @@ A continuación se muestra una ficha de proveedor.
 .. figure:: images/editar_proveedores.png
    :width: 800 px
 
+Ejercicios fiscales
+"""""""""""""""""""""
+
+Como hemos indicado anteriormente, es necesario relacionar la empresa con un ejercicio fiscal para que pueda llevarse la contabilidad.
+
+Lo más importante a tener en cuenta en la creación del ejercicio fiscal es la fecha de inicio y la fecha de fin (duración del año contable). Después indicamos la serie de los documentos. Esta serie delimita el código numérico por el que comenzarán a contar los informes (tanto de compras como de ventas) de cada año fiscal.
+
+Series de facturación
+""""""""""""""""""""""""
+
+Una empresa puede tener varias series de facturación, como por ejemplo en el caso de facturas rectificativas o cuando esta empresa cuente con varios establecimientos desde los que efectúe sus operaciones.
+
+La numeración de los documentos (presupuestos, pedidos, albaranes y facturas) dentro de cada serie será correlativa.
+
+Impuestos
+"""""""""""""
+
+Se detallan e introducen los diferentes tipos de impuestos a los que está sujeta nuestra empresa. Así tendremos, por ejemplo, los distintos tipos de IVA para poder aplicarlos de forma automática cada vez que se requieran.
+
+.. figure:: images/editar_series_facturacion.png
+   :width: 800 px
+   
+Cuentas Bancarias
+""""""""""""""""""""""""
+
+En este apartado se introducen las diferentes cuentas bancarias pertenecientes a nuestra empresa y de las cuales nos servimos para los cobros y pagos. Serán necesarias para poder llevar a cabo las remesas y otro tipo de acciones dependientes de nuestros números de cuenta.
+
+Bancos
+""""""""""""""
+
+En la aplicación ya están preintroducidos (por defecto) los principales bancos. Tan sólo habrá que introducir los bancos que no se muestren en dicho listado en caso de requerirlos.
+
+.. figure:: images/editar_bancos.png
+   :width: 800 px
+   
+Descuentos
+"""""""""""""""""
+
+Se podrán crear todo tipo de descuentos que queramos aplicar a cada cliente. Los iremos introduciendo a través de este sencillo formulario.
+
+.. figure:: images/editar_descuentos.png
+   :width: 800 px
+   
+Formas de pago
+""""""""""""""""""
+
+Dependiendo de las diferentes formas de pago que acepte nuestra empresa, en este apartado serán creadas dichas formas de pago.
+
+.. figure:: images/editar_formas_pago.png
+   :width: 800 px
+   
+Tipos de rappel
+"""""""""""""""""""""""
+
+Los tipos de rappel permiten definir conjuntos de intervalos de cantidades con un descuento asociado a cada cantidad, para ser utilizadas en la facturación. Los iremos introduciendo de la misma forma que los descuentos.
+
+Agentes
+""""""""""""""""
+
+Este apartado sirve para dar de alta a los agentes encargados de las relaciones comerciales. Los agentes podrán asignarse a cuentas de clientes y podrá indicarse el tipo de comisión que obtendrán (en caso de estar sujetos a comisión) por sus ventas.
+
+Usuarios
+"""""""""""""""
+
+Los usuarios son las distintas personas que trabajan con la aplicación. A estos usuarios se les podrá dar distintos permisos con el módulo control de acceso. Se pueden dar de alta tantos usurarios como queramos.
+
+En el campo *Identificador* indicaremos el nombre con el que accederá dicho usuario a la aplicación. Después se introduce el departamento al que pertenece, si no aparece en el listado tendremos que crear el nuevo departamento.
+
+Departamentos
+"""""""""""""""""
+
+Si la empresa dispone de distintos departamentos y se quiere llevar un control de ellos, se pueden dar de alta tantos departamentos sean necesarios. La forma de introducirlos es muy sencilla.
+
+.. figure:: images/editar_departamentos.png
+   :width: 800 px
+
+El código se asigna por defecto o también le podemos asignar otro distinto. Después introducimos el nombre del departamento.
+
+Grupos de clientes
+""""""""""""""""""""""
+
+Un grupo de clientes sirve para asignar una tarifa específica sobre los precios de venta. Por ejemplo, de compra frecuente, de compra ocasional, de altos volúmenes de compra, etc.
+
+Para asignar un cliente a un grupo de clientes lo haremos desde su ficha.
+
+.. figure:: images/editar_grupos_clientes.png
+   :width: 800 px
+
+Los precios especiales dependerán de la tarifa que asignemos. Para crear tarifas Ver apartado *Almacén –> Tarifas*.
+
+Divisas
+""""""""""""
+
+Eneboo permite trabajar con distintos tipos de divisa. La aplicación tiene por defecto un listado con diversos tipos de divisas. También se pueden dar de alta en el caso de que no se encuentren en dicho listado.
+
+Países y Provincias
+"""""""""""""""""""""""""""
+
+En el caso del apartado de países la aplicación contiene por defecto España, pero podemos crear tantos como queramos. En el caso de las provincias viene un listado precargado de provincias españolas, pero al igual que en el apartado de países se pueden crear tantas como queramos.
+
 Almacén
 -----------------------------------
+
+Eneboo permite gestionar de forma automática el control de sotck de sus artículos en tiempo real, con la posibilidad añadida de trabajar con varios almacenes.
+Para llevar esta gestión se realiza la entrada y la salida de artículos, mediante unos documentos que aumentan o disminuyen el stock. 
+
+Para poder sacar el máximo partido a Eneboo hay que conocer perfectamente cómo reacciona cada documento sobre el stock.
+
+A continuación se detalla el efecto que producen las líneas de cada documento sobre el stock.
+
+==========          ======================= ==========          =======================
+Documento           Efecto sobre el stock   Documento           Efecto sobre el stock
+==========          ======================= ==========          =======================
+Ofertas de venta    No afecta stock         Ofertas de compra   No afecta a stock
+Pedidos de venta    No afecta stock         Pedidos de compra   No afecta a stock
+Albaranes de venta  Disminuye stock         Albaranes de compra Aumenta stock
+Facturas de venta   Disminuye stock         Facturas de compra  Aumenta stock
+==========          ======================= ==========          =======================
+
+El stock de un almacén no puede modificarse en la ficha del artículo, sino que debe producirse un movimiento en cualquiera de los documentos especificados. Por ejemplo, en el caso de que sea necesario, porque el stock no cuadra con el stock real, se realiza una regularización.
+
+Datos Generales
+""""""""""""""""""""
+
+Antes de nada debemos definir el IVA que se aplica por defecto para los artículos en los distintos procesos (ventas o compras).
+
+.. figure:: images/editar_datos_generales_almacen.png
+   :width: 800 px
 
 Artículos
 """""""""""""
@@ -144,9 +295,14 @@ cada uno de ellos.
 
 Aquí indicaremos el stock mínimo y máximo. También podemos marcar *Permitir ventas sin stock* para que, en el caso de que no tengamos stock, podamos hacer un albarán o factura.
 
+A veces, sucede que la cantidad almacenada puede variar por razones diferentes a las compras o ventas. Hay unidades de mercancía que se rompen, se pierden, se estropean, etc. Entonces, hay una posibilidad de que el stock registrado en las bases de datos no coincida con el stock real depositado en los almacenes. Por tanto, es conveniente que periódicamente el usuario ajuste el stock que tenemos grabado en Eneboo. Esto lo podemos hacer desde la misma ficha del artículo o bien en el apartado *Regularización de stocks*.
+
 **Agentes**
 
-En caso de existir agentes, aquí podemos asignarle sus comisiones por la venta de este artículo.
+En caso de trabajar con agentes comerciales, se introducen y podemos indicar la comisión a la que estará sujeta la venta de este artículo.
+
+.. figure:: images/editar_articulos_agentes.png
+   :width: 800 px
 
 **Contabilidad**
 
